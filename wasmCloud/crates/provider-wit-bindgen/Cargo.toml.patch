@@ -1,0 +1,20 @@
+--- ./crates/provider-wit-bindgen/Cargo.toml.orig	2024-06-20 12:18:01.435793241 +0200
++++ ./crates/provider-wit-bindgen/Cargo.toml	2024-06-20 12:41:32.827348265 +0200
+@@ -4,12 +4,11 @@
+ description = """
+ Macro for performing bindgen while building wasmCloud capability providers written in Rust
+ """
+-
+-authors.workspace = true
+-categories.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++categories = ["wasm"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [badges.maintenance]
+ status = "actively-developed"

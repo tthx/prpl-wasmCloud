@@ -1,0 +1,18 @@
+--- ./crates/wash-lib/Cargo.toml.orig	2024-06-20 12:18:01.459793324 +0200
++++ ./crates/wash-lib/Cargo.toml	2024-06-20 12:44:52.716849627 +0200
+@@ -5,11 +5,10 @@
+ description = "wasmCloud Shell (wash) libraries"
+ keywords = ["webassembly", "wasmcloud", "wash", "cli"]
+ readme = "README.md"
+-
+-authors.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [badges]
+ maintenance = { status = "actively-developed" }

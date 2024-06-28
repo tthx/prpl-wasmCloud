@@ -1,0 +1,46 @@
+--- ./Cargo.toml.orig	2024-06-21 10:29:46.947876149 +0200
++++ ./Cargo.toml	2024-06-21 11:52:26.957327431 +0200
+@@ -1,20 +1,15 @@
++cargo-features = ["edition2021"]
++
+ [package]
+ name = "wasmcloud"
+ version = "0.82.0"
+ description = "wasmCloud host runtime"
+-
+-authors.workspace = true
+-categories.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
+-
+-[workspace.package]
+ authors = ["The wasmCloud Team"]
+ categories = ["wasm"]
+ edition = "2021"
+ license = "Apache-2.0"
+ repository = "https://github.com/wasmCloud/wasmCloud"
++homepage = "https://wasmcloud.com/"
+ 
+ [badges.maintenance]
+ status = "actively-developed"
+@@ -57,8 +52,8 @@
+ serde_bytes = { workspace = true }
+ serde_json = { workspace = true }
+ tempfile = { workspace = true }
+-test-actors = { workspace = true }
+-test-providers = { workspace = true }
++test-actors = { workspace = true, path = "./tests/actors" }
++test-providers = { workspace = true, path = "./tests/providers" }
+ tokio = { workspace = true, features = ["time"] }
+ tokio-stream = { workspace = true }
+ tracing-subscriber = { workspace = true, features = [
+@@ -121,7 +116,7 @@
+ normpath = { version = "1.1" , default-features = false }
+ nuid = { version = "0.4", default-features = false }
+ oci-distribution = { version = "0.9", default-features = false }
+-once_cell = { version = "1", default-features = false }
++once_cell = { version = "<1.19", default-features = false }
+ opentelemetry = { version = "0.21", default-features = false }
+ opentelemetry-appender-tracing = { version = "0.2", default-features = false }
+ opentelemetry-nats = { version = "0.1", path = "./crates/opentelemetry-nats", default-features = false }

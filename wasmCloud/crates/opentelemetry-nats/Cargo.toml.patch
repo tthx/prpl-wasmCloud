@@ -1,0 +1,20 @@
+--- ./crates/opentelemetry-nats/Cargo.toml.orig	2024-06-20 12:18:01.434793237 +0200
++++ ./crates/opentelemetry-nats/Cargo.toml	2024-06-20 12:40:01.449972401 +0200
+@@ -2,12 +2,11 @@
+ name = "opentelemetry-nats"
+ version = "0.1.0"
+ description = "Convenience functions for propagating OpenTelemetry traces on NATS messages"
+-
+-authors.workspace = true
+-categories.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++categories = ["wasm"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [features]
+ default = []

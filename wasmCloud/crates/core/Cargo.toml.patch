@@ -1,0 +1,20 @@
+--- ./crates/core/Cargo.toml.orig	2024-06-20 12:37:41.723399242 +0200
++++ ./crates/core/Cargo.toml	2024-06-20 12:37:57.683464597 +0200
+@@ -2,12 +2,11 @@
+ name = "wasmcloud-core"
+ version = "0.2.0"
+ description = "wasmCloud core functionality shared throughout the ecosystem"
+-
+-authors.workspace = true
+-categories.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++categories = ["wasm"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [features]
+ default = []

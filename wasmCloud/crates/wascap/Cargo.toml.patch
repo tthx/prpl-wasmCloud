@@ -1,0 +1,18 @@
+--- ./crates/wascap/Cargo.toml.orig	2024-06-20 12:18:01.442793265 +0200
++++ ./crates/wascap/Cargo.toml	2024-06-20 12:43:49.892363776 +0200
+@@ -7,11 +7,10 @@
+ readme = "README.md"
+ keywords = ["jwt", "crypto", "ed25519", "security", "webassembly"]
+ categories = ["cryptography", "authentication", "wasm"]
+-
+-authors.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [dependencies]
+ data-encoding = { workspace = true }

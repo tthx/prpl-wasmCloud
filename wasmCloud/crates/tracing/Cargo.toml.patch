@@ -1,0 +1,20 @@
+--- ./crates/tracing/Cargo.toml.orig	2024-06-20 12:18:01.442793265 +0200
++++ ./crates/tracing/Cargo.toml	2024-06-20 12:43:24.916163790 +0200
+@@ -2,12 +2,11 @@
+ name = "wasmcloud-tracing"
+ version = "0.1.0"
+ description = "wasmCloud tracing functionality"
+-
+-authors.workspace = true
+-categories.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++categories = ["wasm"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [features]
+ default = []

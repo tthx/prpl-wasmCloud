@@ -1,0 +1,39 @@
+--- ./crates/runtime/Cargo.toml.orig	2024-06-20 12:18:01.440793258 +0200
++++ ./crates/runtime/Cargo.toml	2024-06-20 13:15:37.515887090 +0200
+@@ -2,12 +2,11 @@
+ name = "wasmcloud-runtime"
+ version = "0.3.0"
+ description = "wasmCloud runtime library"
+-
+-authors.workspace = true
+-categories.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++categories = ["wasm"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [badges.maintenance]
+ status = "actively-developed"
+@@ -35,7 +34,7 @@
+ uuid = { workspace = true }
+ wascap = { workspace = true }
+ wasi-common = { workspace = true }
+-wasmcloud-compat = { workspace = true }
++wasmcloud-compat = { workspace = true, path = "../compat" }
+ wasmparser = { workspace = true }
+ wasmtime = { workspace = true, features = ["addr2line", "async", "cache", "component-model", "coredump", "cranelift", "parallel-compilation", "pooling-allocator" ] }
+ wasmtime-wasi = { workspace = true, features = ["sync", "preview2"] }
+@@ -46,7 +45,7 @@
+ [dev-dependencies]
+ once_cell = { workspace = true }
+ serde = { workspace = true }
+-test-actors = { workspace = true }
++test-actors = { workspace = true, path = "../../tests/actors" }
+ tokio = { workspace = true, features = ["fs", "io-std", "macros", "net"] }
+ tracing-subscriber = { workspace = true, features = ["ansi", "env-filter", "fmt", "json", "std"] }
+-wasmcloud-actor = { workspace = true, features = ["uuid"] }
++wasmcloud-actor = { workspace = true, features = ["uuid"], path = "../actor" }

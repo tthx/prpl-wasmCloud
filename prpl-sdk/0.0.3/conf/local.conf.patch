@@ -1,0 +1,7 @@
+--- local.conf.orig	2024-06-25 12:30:19.055304088 +0200
++++ local.conf	2024-06-25 12:30:38.567346541 +0200
+@@ -47,3 +47,4 @@
+ 
+ require conf/locked-sigs.inc
+ require conf/unlocked-sigs.inc
++require conf/rust.inc

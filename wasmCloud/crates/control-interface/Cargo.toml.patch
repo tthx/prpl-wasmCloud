@@ -1,0 +1,18 @@
+--- ./crates/control-interface/Cargo.toml.orig	2024-06-20 12:18:01.432793230 +0200
++++ ./crates/control-interface/Cargo.toml	2024-06-20 12:39:03.363733885 +0200
+@@ -7,11 +7,10 @@
+ readme = "README.md"
+ keywords = ["webassembly", "wasm", "wasmcloud", "control", "ctl"]
+ categories = ["wasm", "api-bindings"]
+-
+-authors.workspace = true
+-edition.workspace = true
+-license.workspace = true
+-repository.workspace = true
++authors = ["The wasmCloud Team"]
++edition = "2021"
++license = "Apache-2.0"
++repository = "https://github.com/wasmCloud/wasmCloud"
+ 
+ [dependencies]
+ async-nats = { workspace = true }
